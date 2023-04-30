@@ -48,6 +48,7 @@ namespace LD53.Ship
                         completeLooted.Add(lootAreaNumber);
                         score.Add(Random.Range(10, 15));
                         lootProgressUI.HideProgress();
+                        gameUIController.ShowLootAlert(false);
                         gameUIController.ShowEventMessage("Delivery intercepted");
                         audioSource.Play();
                     }
