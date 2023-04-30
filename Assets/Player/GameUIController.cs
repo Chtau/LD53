@@ -103,6 +103,7 @@ namespace LD53.Player
         {
             eventMessageText.text = msg;
             eventMessageText.color = positive ? new Color(0.2904354f, 0.7357641f, 0.8396226f) : new Color(0.8392157f, 0.2901961f, 0.430219f);
+            eventMessageObj.transform.DOScale(1, 0);
             eventMessageObj.SetActive(true);
 
             eventMessageObj.transform.DOScale(0, 0.2f).SetDelay(3f).OnComplete(() => eventMessageObj.SetActive(false));
