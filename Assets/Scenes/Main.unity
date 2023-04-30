@@ -4559,8 +4559,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1416640108}
   m_HandleRect: {fileID: 1416640107}
   m_Direction: 2
-  m_Value: -0.00000067524223
-  m_Size: 0.58868665
+  m_Value: 0.00000029290314
+  m_Size: 0.55510485
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -9709,6 +9709,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 73aeb4d2cd0c5d147acba14e16923850, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameUIController: {fileID: 16166078}
 --- !u!114 &803235119
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14091,7 +14092,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 8.5, y: -39.609898}
+  m_AnchoredPosition: {x: 8.5, y: -25.810057}
   m_SizeDelta: {x: 7, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1261232053
@@ -20010,24 +20011,24 @@ MonoBehaviour:
     eyes open for drones that will try to destroy you and prevent you from intercepting
     deliveries.
 
-    
+
 
     Controls:
 
     W = Accelerate
 
-    A, D = Rotate left
-    and right
+    A, D = Rotate left and
+    right
 
     Mouse Left and Right = Turn left and right
 
-    Mouse Left click
-    = Shoot
+    Mouse Left click =
+    Shoot
 
     E = Steal a delivery when the parcel icon is visible
 
-    ESC
-    = Mouse unlock'
+    ESC = Mouse
+    unlock'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
