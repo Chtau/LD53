@@ -11,5 +11,10 @@ namespace LD53.Ship
             // TODO: add a timer for looting
             other.gameObject.GetComponent<Looter>()?.SetLoot(1);
         }
+
+        private void OnTriggerExit(Collider other)
+        {
+            other.gameObject.GetComponent<Looter>()?.SetLoot(0);
+        }
     }
 }

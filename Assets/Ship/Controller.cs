@@ -32,8 +32,8 @@ namespace LD53.Ship
             defaultShipRotation = spaceshipRoot.localEulerAngles;
             rotationZ = defaultShipRotation.z;
             
-            Cursor.lockState = CursorLockMode.Locked;
-            Cursor.visible = false;
+            /*Cursor.lockState = CursorLockMode.Locked;
+            Cursor.visible = false;*/
         }
 
         private void FixedUpdate()
@@ -88,14 +88,18 @@ namespace LD53.Ship
 
         private void OnEnable()
         {
-            Cursor.lockState = CursorLockMode.Locked;
-            Cursor.visible = false;
+            if (!EventSystem.current.IsPointerOverGameObject())
+            {
+                return;
+            }
+            //Cursor.lockState = CursorLockMode.Locked;
+            //Cursor.visible = false;
         }
 
         private void OnDisable()
         {
-            Cursor.visible = true;
-            Cursor.lockState = CursorLockMode.None;
+            /*Cursor.visible = true;
+            Cursor.lockState = CursorLockMode.None;*/
         }
     }
 }
