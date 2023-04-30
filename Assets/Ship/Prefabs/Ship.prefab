@@ -81,6 +81,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   path: {fileID: 0}
   moveSpeed: 5
+  startpoint: 0
 --- !u!114 &2454192978102227909
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -93,6 +94,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2f16231982964044a0226c77b25b0a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  LootIndex: 1
 --- !u!114 &2454192978102227906
 MonoBehaviour:
   m_ObjectHideFlags: 0
