@@ -2,13 +2,17 @@ using LD53.Ship;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 namespace LD53.Player
 {
     public class CloseDelivery : MonoBehaviour
     {
+        public GameUIController gameUIController;
         public GameObject indicator;
         public GameObject target;
+
+        public UnityEvent AllDeliveriesCompleted;
 
         private Loot closestTarget;
         private float distance = -1;
@@ -63,8 +67,15 @@ namespace LD53.Player
             }
             if (closestTarget != null)
             {
-                Debug.Log("New Target found");
                 target = closestTarget.gameObject;
+                indicator.SetActive(true);
+            }
+            else
+            {
+                // no more deliveries found. GG
+                gameUIController.ShowEventMessage("Deliveries complete");
+                AllDeliveriesCompleted?.Invoke();
+                indicator.SetActive(false);
             }
         }
 
