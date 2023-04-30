@@ -955,7 +955,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnPoint: {fileID: 1724006605}
   prefab: {fileID: 4469935522304431459, guid: 515005622139a2e44b4b3c93ff8be7ca, type: 3}
-  speed: 200
+  speed: 100
   buttonName: Fire1
 --- !u!114 &233039734
 MonoBehaviour:
@@ -4929,7 +4929,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6cb957c426dcb584cb41df0ddb9c6d9a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  life: 30
+  life: 30000
   LifeChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -6458,7 +6458,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnPoint: {fileID: 436809746}
   prefab: {fileID: 4469935522304431459, guid: 515005622139a2e44b4b3c93ff8be7ca, type: 3}
-  speed: 200
+  speed: 100
 --- !u!114 &1691415076
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8066,7 +8066,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6cb957c426dcb584cb41df0ddb9c6d9a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  life: 100
+  life: 100000
   LifeChanged:
     m_PersistentCalls:
       m_Calls:

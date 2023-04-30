@@ -7,6 +7,7 @@ namespace LD53.Drones
     public class MoveTo : MonoBehaviour
     {
         public float speed = 1f;
+        public float keepDistance = 15f;
 
         private GameObject target;
 
@@ -17,7 +18,9 @@ namespace LD53.Drones
                 // follow the player
                 // try to shoot the player
                 transform.LookAt(target.transform);
-                transform.Translate(Vector3.forward * speed * Time.deltaTime);
+                var distance = Vector3.Distance(transform.position, target.transform.position);
+                if (distance > keepDistance)
+                    transform.Translate(Vector3.forward * speed * Time.deltaTime);
             }
         }
 
