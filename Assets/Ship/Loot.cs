@@ -8,7 +8,6 @@ namespace LD53.Ship
     {
         private void OnTriggerEnter(Collider other)
         {
-            // TODO: add a timer for looting
             other.gameObject.GetComponent<Looter>()?.SetLoot(1);
         }
 

@@ -54,6 +54,7 @@ namespace LD53.Ship
             moveDirection = transform.TransformDirection(moveDirection);
             //Set the velocity, so you can move
             r.velocity = new Vector3(moveDirection.x, moveDirection.y, moveDirection.z);
+            //transform.position = new Vector3(moveDirection.x, moveDirection.y, moveDirection.z);
 
             //Camera follow
             mainCamera.transform.position = Vector3.Lerp(mainCamera.transform.position, cameraPosition.position, Time.deltaTime * cameraSmooth);

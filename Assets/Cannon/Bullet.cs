@@ -11,15 +11,28 @@ namespace LD53.Cannon
         [Tooltip("Damage which will be applied to the \"Life\" component.")]
         public int damage = 10;
 
+        private int parentId;
+
         private void Awake()
         {
             Destroy(gameObject, lifeTime);
         }
 
-        private void OnCollisionEnter(Collision collision)
+        private void OnTriggerEnter(Collider other)
         {
-            collision.gameObject.GetComponentInParent<Ship.Life>()?.IncomingHit(damage);
-            Destroy(gameObject);
+            if (other.gameObject.GetInstanceID() == parentId)
+                return;
+            var life = other.gameObject.GetComponentInParent<Ship.Life>();
+            if (life != null)
+            {
+                life.IncomingHit(damage);
+                Destroy(gameObject);
+            }
+        }
+
+        public void SetParentId(int id)
+        {
+            parentId = id;
         }
     }
 }

@@ -25,8 +25,6 @@ namespace LD53.Player
         public GameObject eventMessageObj;
         public TextMeshProUGUI eventMessageText;
 
-        public int healthMaxValue = 100;
-
         private void Awake()
         {
             startMissionMenu.SetActive(true);
@@ -34,7 +32,7 @@ namespace LD53.Player
             lootAlert.gameObject.SetActive(false);
             eventMessageObj.SetActive(false);
             currentScore.text = "0";
-            healthPointsText.text = $"100/{healthMaxValue}";
+            healthPointsText.text = $"100/100";
             healthPointsValue.fillAmount = 1;
         }
 
@@ -42,12 +40,6 @@ namespace LD53.Player
         {
             scrollRectMission.verticalNormalizedPosition = 1;
             pause.PauseGame();
-        }
-
-        public void UpdateHealth(int value)
-        {
-            healthPointsText.text = $"{value}/{healthMaxValue}";
-            healthPointsValue.fillAmount = (float)value / healthMaxValue;
         }
 
         public void UpdateScore(int value)
@@ -113,6 +105,12 @@ namespace LD53.Player
             eventMessageObj.SetActive(true);
 
             eventMessageObj.transform.DOScale(0, 0.2f).SetDelay(3f).OnComplete(() => eventMessageObj.SetActive(false));
+        }
+
+        public void UpdateLife(int currentLife, int maxLife)
+        {
+            healthPointsText.text = $"{currentLife}/{maxLife}";
+            healthPointsValue.fillAmount = (float)currentLife / maxLife;
         }
     }
 }

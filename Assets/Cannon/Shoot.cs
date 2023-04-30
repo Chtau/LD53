@@ -8,7 +8,7 @@ namespace LD53.Cannon
     public class Shoot : MonoBehaviour
     {
         public Transform spawnPoint;
-        public GameObject prefab;
+        public Bullet prefab;
         [Tooltip("Projectile speed")]
         public float speed = 10f;
         [Tooltip("Input to be used with this shooting skill.")]
@@ -18,7 +18,8 @@ namespace LD53.Cannon
         {
             if (Input.GetButtonDown(buttonName))
             {
-                var bullet = Instantiate(prefab, spawnPoint.position, spawnPoint.rotation);
+                Bullet bullet = Instantiate(prefab, spawnPoint.position, spawnPoint.rotation, transform);
+                bullet.SetParentId(gameObject.GetInstanceID());
                 bullet.GetComponent<Rigidbody>().velocity = spawnPoint.forward * speed;
             }
         }
