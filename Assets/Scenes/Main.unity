@@ -4051,6 +4051,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   path: {fileID: 972269551}
   moveSpeed: 1
+  startpoint: 1
 --- !u!114 &927541250
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8208,8 +8209,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e870cd755419a646967641fd55bc5fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameUIController: {fileID: 0}
   indicator: {fileID: 1981284575}
   target: {fileID: 1377425141}
+  AllDeliveriesCompleted:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!4 &5522448366683422454
 Transform:
   m_ObjectHideFlags: 0

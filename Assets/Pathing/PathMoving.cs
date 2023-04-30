@@ -7,15 +7,27 @@ namespace LD53.Pathing
     public class PathMoving : MonoBehaviour
     {
         public Path path;
-        public float moveSpeed = 1f;
+        public float moveSpeed = 5f;
+        public int startpoint = 0;
 
         private Transform currentWaypoint;
 
         private void Start()
         {
-            currentWaypoint = path.GetNext(currentWaypoint);
-            transform.position = currentWaypoint.position;
-
+            if (startpoint == 0)
+            {
+                currentWaypoint = path.GetNext(currentWaypoint);
+                transform.position = currentWaypoint.position;
+            }
+            else
+            {
+                for (int i = 0; i < startpoint; i++)
+                {
+                    currentWaypoint = path.GetNext(currentWaypoint);
+                    transform.position = currentWaypoint.position;
+                }
+            }
+            
             // get the next waypoint to move towards
             currentWaypoint = path.GetNext(currentWaypoint);
             transform.LookAt(currentWaypoint);
