@@ -7,6 +7,7 @@ namespace LD53.Drones
 {
     public class Shoot : MonoBehaviour
     {
+        public AudioSource audioSource;
         public Transform spawnPoint;
         public Bullet prefab;
         [Tooltip("Projectile speed")]
@@ -17,7 +18,7 @@ namespace LD53.Drones
 
         private void Update()
         {
-            if (target != null)
+            if (target != null && transform.GetChild(0).gameObject.activeSelf)
             {
                 time += Time.deltaTime;
                 if (time % 60 > 1)
@@ -25,6 +26,7 @@ namespace LD53.Drones
                     Bullet bullet = Instantiate(prefab, spawnPoint.position, spawnPoint.rotation, transform);
                     bullet.SetParentId(gameObject.GetInstanceID());
                     bullet.GetComponent<Rigidbody>().velocity = (target.transform.position - spawnPoint.position).normalized * speed;
+                    audioSource.Play();
                     time = 0;
                 }
             }

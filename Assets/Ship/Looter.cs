@@ -7,6 +7,7 @@ namespace LD53.Ship
 {
     public class Looter : MonoBehaviour
     {
+        public AudioSource audioSource;
         public Score score;
         public GameUIController gameUIController;
         public LootProgressUI lootProgressUI;
@@ -48,6 +49,7 @@ namespace LD53.Ship
                         score.Add(Random.Range(10, 15));
                         lootProgressUI.HideProgress();
                         gameUIController.ShowEventMessage("Delivery intercepted");
+                        audioSource.Play();
                     }
                 }
             }

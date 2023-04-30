@@ -7,6 +7,7 @@ namespace LD53.Cannon
 {
     public class Shoot : MonoBehaviour
     {
+        public AudioSource audioSource;
         public Transform spawnPoint;
         public Bullet prefab;
         [Tooltip("Projectile speed")]
@@ -21,6 +22,7 @@ namespace LD53.Cannon
                 Bullet bullet = Instantiate(prefab, spawnPoint.position, spawnPoint.rotation, transform);
                 bullet.SetParentId(gameObject.GetInstanceID());
                 bullet.GetComponent<Rigidbody>().velocity = spawnPoint.forward * speed;
+                audioSource.Play();
             }
         }
     }

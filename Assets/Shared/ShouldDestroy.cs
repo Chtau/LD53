@@ -6,9 +6,13 @@ namespace LD53.Shared
 {
     public class ShouldDestroy : MonoBehaviour
     {
+        public AudioSource audioSource;
+
         public void Now()
         {
-            Destroy(gameObject);
+            transform.GetChild(0).gameObject.SetActive(false);
+            audioSource.Play();
+            Destroy(gameObject, 5f);
         }
     }
 }
