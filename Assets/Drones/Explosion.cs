@@ -9,7 +9,6 @@ namespace LD53.Drones
         [Tooltip("Damage which will be applied to the \"Life\" component.")]
         public int damage = 25;
 
-
         private void OnCollisionEnter(Collision collision)
         {
             collision.gameObject.GetComponentInParent<Ship.Life>()?.IncomingHit(damage);

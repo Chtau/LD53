@@ -54,6 +54,7 @@ namespace LD53.Player
 
         public void ShowMenu(bool isGameover = false)
         {
+            mouseLock.TryUnlock();
             pause.PauseGame();
             if (isGameover)
             {

@@ -26,6 +26,12 @@ namespace LD53.Cannon
             if (life != null)
             {
                 life.IncomingHit(damage);
+                if (life.life == 0 && gameObject.GetComponentInParent<Ship.Looter>() != null)
+                {
+                    // player has destroyed a ship/drone
+                    var score = FindObjectOfType<Player.Score>();
+                    score.Add(5);
+                }
                 Destroy(gameObject);
             }
         }

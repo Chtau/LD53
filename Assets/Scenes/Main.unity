@@ -476,6 +476,21 @@ MonoBehaviour:
   LifeChanged:
     m_PersistentCalls:
       m_Calls: []
+  Destroyed:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1377425148}
+        m_TargetAssemblyTypeName: LD53.Shared.ShouldDestroy, Assembly-CSharp
+        m_MethodName: Now
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &176575014
 GameObject:
   m_ObjectHideFlags: 0
@@ -490,6 +505,7 @@ GameObject:
   - component: {fileID: 176575020}
   - component: {fileID: 176575021}
   - component: {fileID: 176575022}
+  - component: {fileID: 176575023}
   m_Layer: 0
   m_Name: DroneMine
   m_TagString: Untagged
@@ -610,6 +626,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 25
+--- !u!114 &176575023
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 176575014}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 778ea829ead3c5444bf2e5d9d20c7d2c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &196249069
 GameObject:
   m_ObjectHideFlags: 0
@@ -4905,6 +4933,21 @@ MonoBehaviour:
   LifeChanged:
     m_PersistentCalls:
       m_Calls: []
+  Destroyed:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1691415076}
+        m_TargetAssemblyTypeName: LD53.Shared.ShouldDestroy, Assembly-CSharp
+        m_MethodName: Now
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1251092992
 GameObject:
   m_ObjectHideFlags: 0
@@ -5455,6 +5498,7 @@ GameObject:
   - component: {fileID: 1377425146}
   - component: {fileID: 1377425144}
   - component: {fileID: 1377425147}
+  - component: {fileID: 1377425148}
   m_Layer: 0
   m_Name: Ship
   m_TagString: Untagged
@@ -5531,6 +5575,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e2f16231982964044a0226c77b25b0a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1377425148
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1377425141}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 778ea829ead3c5444bf2e5d9d20c7d2c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1388910660
@@ -6162,6 +6218,21 @@ MonoBehaviour:
   LifeChanged:
     m_PersistentCalls:
       m_Calls: []
+  Destroyed:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 176575023}
+        m_TargetAssemblyTypeName: LD53.Shared.ShouldDestroy, Assembly-CSharp
+        m_MethodName: Now
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1654677982
 GameObject:
   m_ObjectHideFlags: 0
@@ -6240,6 +6311,7 @@ GameObject:
   - component: {fileID: 1691415074}
   - component: {fileID: 1691415073}
   - component: {fileID: 1691415075}
+  - component: {fileID: 1691415076}
   m_Layer: 0
   m_Name: DroneShooter
   m_TagString: Untagged
@@ -6387,6 +6459,18 @@ MonoBehaviour:
   spawnPoint: {fileID: 436809746}
   prefab: {fileID: 4469935522304431459, guid: 515005622139a2e44b4b3c93ff8be7ca, type: 3}
   speed: 200
+--- !u!114 &1691415076
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1691415068}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 778ea829ead3c5444bf2e5d9d20c7d2c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1704476525
 GameObject:
   m_ObjectHideFlags: 0
@@ -7921,6 +8005,21 @@ MonoBehaviour:
   LifeChanged:
     m_PersistentCalls:
       m_Calls: []
+  Destroyed:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5415883094145395027}
+        m_TargetAssemblyTypeName: LD53.Shared.ShouldDestroy, Assembly-CSharp
+        m_MethodName: Now
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!4 &5415883093909268056
 Transform:
   m_ObjectHideFlags: 0
@@ -7983,6 +8082,21 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  Destroyed:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5415883094868101408}
+        m_TargetAssemblyTypeName: LD53.Player.LoseAllLife, Assembly-CSharp
+        m_MethodName: Lose
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!64 &5415883094020626714
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -8009,6 +8123,7 @@ GameObject:
   - component: {fileID: 927541251}
   - component: {fileID: 927541249}
   - component: {fileID: 927541250}
+  - component: {fileID: 5415883094145395027}
   m_Layer: 0
   m_Name: Ship (1)
   m_TagString: Untagged
@@ -8032,6 +8147,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!114 &5415883094145395027
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5415883094145395025}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 778ea829ead3c5444bf2e5d9d20c7d2c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5415883094868101404
 GameObject:
   m_ObjectHideFlags: 0
@@ -8047,6 +8174,7 @@ GameObject:
   - component: {fileID: 233039734}
   - component: {fileID: 233039736}
   - component: {fileID: 233039739}
+  - component: {fileID: 5415883094868101408}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -8072,6 +8200,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5415883094868101408
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5415883094868101404}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a334e1370eeb91428fcb42199c98343, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameUIController: {fileID: 16166078}
 --- !u!4 &5522448366683422454
 Transform:
   m_ObjectHideFlags: 0

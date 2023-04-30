@@ -10,6 +10,7 @@ namespace LD53.Ship
         public int life = 100;
 
         public UnityEvent<int, int> LifeChanged;
+        public UnityEvent Destroyed;
 
         private int maxLife = 100;
 
@@ -24,11 +25,11 @@ namespace LD53.Ship
             life -= damage;
             if (life <= 0)
             {
-                Destroy(gameObject);
+                Destroyed?.Invoke();
                 life = 0;
             }
             LifeChanged?.Invoke(life, maxLife);
-            Debug.Log($"Hit for {damage}, remaining life:{life}");
+            //Debug.Log($"Hit for {damage}, remaining life:{life}");
         }
     }
 }
