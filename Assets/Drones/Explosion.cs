@@ -15,7 +15,7 @@ namespace LD53.Drones
         {
             if (transform.GetChild(0).gameObject.activeSelf)
             {
-                collision.gameObject.GetComponentInParent<Ship.Life>()?.IncomingHit(damage);
+                collision.gameObject.GetComponentInChildren<Ship.Life>()?.IncomingHit(damage);
                 transform.GetChild(0).gameObject.SetActive(false);
                 audioSource.Play();
                 Destroy(gameObject, 5f);
