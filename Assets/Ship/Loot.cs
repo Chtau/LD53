@@ -6,9 +6,11 @@ namespace LD53.Ship
 {
     public class Loot : MonoBehaviour
     {
+        public int LootIndex = 1;
+
         private void OnTriggerEnter(Collider other)
         {
-            other.gameObject.GetComponent<Looter>()?.SetLoot(1);
+            other.gameObject.GetComponent<Looter>()?.SetLoot(LootIndex);
         }
 
         private void OnTriggerExit(Collider other)

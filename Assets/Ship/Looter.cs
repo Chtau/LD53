@@ -2,6 +2,7 @@ using LD53.Player;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 namespace LD53.Ship
 {
@@ -12,7 +13,9 @@ namespace LD53.Ship
         public GameUIController gameUIController;
         public LootProgressUI lootProgressUI;
 
-        private List<int> completeLooted = new();
+        public UnityEvent LootCompleted;
+
+        public static List<int> completeLooted = new();
 
         private bool inLootingArea = false;
         private int lootAreaNumber = 0;
@@ -37,7 +40,7 @@ namespace LD53.Ship
                     {
                         // increase progress till we reach 100%
                         timer += Time.deltaTime;
-                        lootValue = Mathf.RoundToInt(timer % 60) * (100 / 30);
+                        lootValue = Mathf.RoundToInt(timer % 60) * (100 / 10);
                         if (lootValue > 100)
                             lootValue = 100;
                     }
@@ -51,6 +54,7 @@ namespace LD53.Ship
                         gameUIController.ShowLootAlert(false);
                         gameUIController.ShowEventMessage("Delivery intercepted");
                         audioSource.Play();
+                        LootCompleted?.Invoke();
                     }
                 }
             }

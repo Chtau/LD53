@@ -8,6 +8,7 @@ namespace LD53.Ship
     public class Life : MonoBehaviour
     {
         public int life = 100;
+        public int shield = 0;
 
         public UnityEvent<int, int> LifeChanged;
         public UnityEvent Destroyed;
