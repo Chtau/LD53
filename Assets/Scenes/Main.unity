@@ -23,7 +23,7 @@ RenderSettings:
   m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
-  m_AmbientIntensity: 1
+  m_AmbientIntensity: 4
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
   m_SkyboxMaterial: {fileID: 2100000, guid: 355b08b80cc2beb4ba220f0ae7326520, type: 2}
@@ -98,7 +98,8 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_LightingSettings: {fileID: 0}
+  m_LightingSettings: {fileID: 4890085278179872738, guid: 6e86b335c397bc2488e69edbe099abe5,
+    type: 2}
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -3098,9 +3099,9 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: -17, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &240739008
 MonoBehaviour:
@@ -4558,8 +4559,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1416640108}
   m_HandleRect: {fileID: 1416640107}
   m_Direction: 2
-  m_Value: 0.46648172
-  m_Size: 0.062825
+  m_Value: -0.00000067524223
+  m_Size: 0.58868665
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -6952,7 +6953,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &572881352
 RectTransform:
   m_ObjectHideFlags: 0
@@ -14090,8 +14091,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 8.5, y: 0}
-  m_SizeDelta: {x: 7, y: 4138.48}
+  m_AnchoredPosition: {x: 8.5, y: -39.609898}
+  m_SizeDelta: {x: 7, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1261232053
 MonoBehaviour:
@@ -15584,8 +15585,8 @@ RectTransform:
   m_Father: {fileID: 932287457}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.437175}
-  m_AnchorMax: {x: 1, y: 0.5}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -19567,9 +19568,9 @@ RectTransform:
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: -17, y: 20}
+  m_SizeDelta: {x: 0, y: 20}
   m_Pivot: {x: 0, y: 0}
 --- !u!114 &1855950680
 MonoBehaviour:
@@ -19980,10 +19981,10 @@ RectTransform:
   m_Father: {fileID: 1261232052}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 170, y: -2069.24}
-  m_SizeDelta: {x: 340, y: 4138.48}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1927130269
 MonoBehaviour:
@@ -20005,46 +20006,28 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Lorem ipsum dolor sit amet. Sed illo illo ut fugit animi aut eveniet atque
-    ut laudantium harum aut sapiente fugiat ex explicabo quidem! Eos mollitia animi
-    sed similique possimus et aliquid iste cum quas enim aut blanditiis reprehenderit?
+  m_text: 'Your mission is to intercept as many deliveries as possible. Keep your
+    eyes open for drones that will try to destroy you and prevent you from intercepting
+    deliveries.
 
+    
 
+    Controls:
 
-    Ut
-    suscipit adipisci eum labore perferendis et odio aperiam sit voluptatem soluta
-    est voluptatem earum et exercitationem repellendus. In aspernatur aliquid et
-    exercitationem velit eos nihil quis non exercitationem quod.
+    W = Accelerate
 
+    A, D = Rotate left
+    and right
 
+    Mouse Left and Right = Turn left and right
 
-    Vel quae
-    velit sed nulla inventore qui minus consequuntur qui autem nobis aut voluptatem
-    aliquam aut blanditiis facere. A voluptates natus aut voluptatem molestiae ut
-    nihil porro 33 ducimus exercitationem non beatae dolore? Aut maxime deserunt
-    aut amet doloremque est fugiat harum. Qui odit quia hic exercitationem assumenda
-    et possimus minima At omnis voluptas ea laudantium dolores et quam cupiditate.
+    Mouse Left click
+    = Shoot
 
-    Lorem
-    ipsum dolor sit amet. Sed illo illo ut fugit animi aut eveniet atque ut laudantium
-    harum aut sapiente fugiat ex explicabo quidem! Eos mollitia animi sed similique
-    possimus et aliquid iste cum quas enim aut blanditiis reprehenderit?
+    E = Steal a delivery when the parcel icon is visible
 
-
-
-    Ut
-    suscipit adipisci eum labore perferendis et odio aperiam sit voluptatem soluta
-    est voluptatem earum et exercitationem repellendus. In aspernatur aliquid et
-    exercitationem velit eos nihil quis non exercitationem quod.
-
-
-
-    Vel quae
-    velit sed nulla inventore qui minus consequuntur qui autem nobis aut voluptatem
-    aliquam aut blanditiis facere. A voluptates natus aut voluptatem molestiae ut
-    nihil porro 33 ducimus exercitationem non beatae dolore? Aut maxime deserunt
-    aut amet doloremque est fugiat harum. Qui odit quia hic exercitationem assumenda
-    et possimus minima At omnis voluptas ea laudantium dolores et quam cupiditate.'
+    ESC
+    = Mouse unlock'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -20071,8 +20054,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 24
+  m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
